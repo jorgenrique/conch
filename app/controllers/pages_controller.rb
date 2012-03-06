@@ -1,11 +1,15 @@
 class PagesController < ApplicationController
+  
   def home
+    @title='Hello Conchito'
   end
 
-  def contact
+  def landing
+    @title='Hello Conchito'
   end
   
   def about
+    @title='Hello Conchito'
   end
 
 end

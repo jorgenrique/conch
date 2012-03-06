@@ -1,7 +1,11 @@
 Conch::Application.routes.draw do
   get "pages/home"
   get "pages/about"
-  get "pages/contact"
+  get "pages/landing"
+
+  root :to => "pages#landing"
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
