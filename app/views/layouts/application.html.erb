@@ -25,7 +25,7 @@
 				<input></input>
 				<div class='field'>Password</div>
 				<input></input>
-				<div class='btn'><%= link_to image_tag('login.png'), '#' %></div>
+				<div class='btn'><%= link_to image_tag('login.png'), signup_path %></div>
 			</div>
 		</div>
 	</div>
@@ -33,13 +33,9 @@
 	<div id='cont'><%= yield %></div>
 	
 	<div id='footer'></div>
-
-
-	 <!--ul>
-	    <li><%= link_to "Home", '#' %></li>
-	    <li><%= link_to "Help", '#' %></li>
-	    <li><%= link_to "Sign in", '#' %></li>
-	  </ul-->
+	
+	
+	<%= debug(params) if Rails.env.development? %>
 
 </body>
 </html>

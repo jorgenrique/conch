@@ -1,7 +1,10 @@
 Conch::Application.routes.draw do
-  get "pages/home"
-  get "pages/about"
-  get "pages/landing"
+  
+  resources :users
+
+  match '/signup',    :to => 'users#new'
+  match '/home',    :to => 'pages#home'
+  
 
   root :to => "pages#landing"
 
