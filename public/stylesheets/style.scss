@@ -4,6 +4,9 @@
 	font-family: 'Open Sans', sans-serif;
 	font-size:12px;
 }
+h1{
+	color:#b22727 !important;
+}
 #bg{
 	position:absolute;
 	right:0;
@@ -29,14 +32,19 @@
 			text-shadow: #000 1px 1px 6px;
 			float:left;
 			margin-top:22px;
+			.normal{
+				float:left;
+			}
 			.red{
-				color:#b22727;
 				text-decoration:underline;
 				cursor:pointer;
 				text-shadow:none;
 				font-weight:600;
-				margin-left:20px;
+				margin-left:5px;
 				float:left;
+				a{
+					color:#b22727 !important;
+				}
 			}
 		}
 		.login{
@@ -71,6 +79,9 @@
 	margin:auto;
 	margin-top:20px;
 	color:#fff;
+	#new_user{
+		color:#b22727 !important;
+	}
 	.info{
 		float:left;
 		margin-top:120px;
