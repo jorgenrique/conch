@@ -19,33 +19,34 @@
 	
 	<div id='header'>
 		<div id='inner'>
-        	<div class="text"><span class='normal'>Haven’t joined us yet? </span><span class='red'><%= link_to 'Register here', signup_path %></span></div>
-			<div class="login">
-				<div class='field'>Username</div>
-				<input></input>
-				<div class='field'>Password</div>
-				<input></input>
-				<% if signed_in? %>
-				  <li><%= link_to "Profile", current_user %></li>
-				<% end %>
-				  <li><%= link_to "Help", users_path %></li>
-				<% if signed_in? %>
-				  <li><%= link_to "Sign out", signout_path, :method => :delete %></li>
-				<% else %>
-				  <div class='btn'><%= image_tag('login.png') %></div>
-				<% end %>
+		<% if signed_in? %>
+			<li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+		<% else %>
+			
+			<div class="text"><span class='normal'>Haven’t joined us yet? </span><span class='red'><%= link_to 'Register here', signup_path %></span></div>
+			<div class='login'>
+			<%= form_for(:session, :url => sessions_path, :class=>'login') do |f| %>
+			  <div class="field">
+			    <%= f.label :email, 'Email' %>
+			  </div>
+			  <div class='inputs'><%= f.text_field :email %></div>
+			  <div class="field">
+			    <%= f.label :password, 'Password' %>
+			  </div>
+			  <div class='inputs'><%= f.password_field :password %></div>
+			  <div class="btn">
+			    <%= f.submit "" %>
+			  </div>
+			<% end %>
+			</div>
+		<% end %>
 				
 			</div>
 		</div>
 	</div>
 	
 	<div id='cont'>
-		<section class="round">
-		  <% flash.each do |key, value| %>
-		    <div class="flash <%= key %>"><%= value %></div>
-		  <% end %>
 		  <%= yield %>
-		</section>
 	</div>
 	
 	<div id='footer'></div>
