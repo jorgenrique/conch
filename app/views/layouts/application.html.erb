@@ -7,14 +7,31 @@
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->    
   <%= stylesheet_link_tag 'style' %>
+  <%= stylesheet_link_tag 'supersized' %>
   <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,600,300' %>
   <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
   <%#= stylesheet_link_tag 'custom', :media => 'screen' %>
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" %>
+  <%= javascript_include_tag "jquery.easing.min.js" %>
+  <%= javascript_include_tag "supersized.js" %>
+
+	<script type="text/javascript">
+	  $(function(){
+	  $.fn.supersized.options = {  
+	  	fit_portrait: 1,
+	  	slides : [
+	  		{image : 'images/bg.png'}
+	  	]
+	  };
+      $('#supersized').supersized(); 
+  	  });
+	</script>
+
 </head>
 <body>
 	
-	<div id='bg'><%= image_tag 'bg.png' %></div>
-	
+	<div id='supersized'></div>
+		
 	<div id='right_bar'></div>
 	
 	<div id='header'>

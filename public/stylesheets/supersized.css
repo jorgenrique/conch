@@ -1,0 +1,34 @@
+*{
+	margin:0; padding:0;
+}
+body{
+	background:#fff;
+	height:100%;
+	overflow:hidden;
+}
+
+img{
+	border:none;
+}
+
+#supersized{
+  position:fixed;
+	z-index:-5;
+	top:0;
+	right:0;
+}
+#supersized img{ -ms-interpolation-mode: bicubic; }
+
+#supersized img, #supersized a{
+    height:100%;
+    width:50% !important;
+	left:50% !important;
+    position:absolute;
+    z-index: -1;
+}
+#supersized .prevslide, #supersized .prevslide img{
+    z-index: 1;
+}
+#supersized .activeslide, #supersized .activeslide img{
+    z-index: 2;
+}
