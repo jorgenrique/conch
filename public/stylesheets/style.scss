@@ -28,6 +28,34 @@ h1{
 	#inner{
 		width:900px;
 		margin:auto;
+		#nav_menu{
+			float:left;
+			margin-top:20px;
+			ul{
+				float:left;
+				list-style-type:none;
+				li{
+					float:left;
+					margin-right:15px;
+					cursor:pointer;
+				}
+				li:hover{
+					color:#aaa;
+				}
+				.red{
+					color:#912424 !important;
+				}
+			}
+		}
+		#sign_out{
+			float:right;
+			margin-top:20px;
+			a{
+				color:#912424;
+				text-shadow: #000 1px 1px 6px;
+				text-decoration:none;
+			}
+		}
 		.text{
 			text-shadow: #000 1px 1px 6px;
 			float:left;

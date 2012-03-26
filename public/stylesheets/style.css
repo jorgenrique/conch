@@ -27,6 +27,27 @@ h1 {
   #header #inner {
     width: 900px;
     margin: auto; }
+    #header #inner #nav_menu {
+      float: left;
+      margin-top: 20px; }
+      #header #inner #nav_menu ul {
+        float: left;
+        list-style-type: none; }
+        #header #inner #nav_menu ul li {
+          float: left;
+          margin-right: 15px;
+          cursor: pointer; }
+        #header #inner #nav_menu ul li:hover {
+          color: #aaa; }
+        #header #inner #nav_menu ul .red {
+          color: #912424 !important; }
+    #header #inner #sign_out {
+      float: right;
+      margin-top: 20px; }
+      #header #inner #sign_out a {
+        color: #912424;
+        text-shadow: #000 1px 1px 6px;
+        text-decoration: none; }
     #header #inner .text {
       text-shadow: #000 1px 1px 6px;
       float: left;

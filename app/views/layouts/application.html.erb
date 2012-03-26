@@ -14,6 +14,7 @@
   <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" %>
   <%= javascript_include_tag "jquery.easing.min.js" %>
   <%= javascript_include_tag "supersized.js" %>
+  <%= javascript_include_tag "general.js" %>
 
 	<script type="text/javascript">
 	  $(function(){
@@ -37,7 +38,15 @@
 	<div id='header'>
 		<div id='inner'>
 		<% if signed_in? %>
-			<li><%= link_to "Sign out", signout_path, :method => :delete %></li>
+			<div id='nav_menu'>
+				<ul>
+					<li>Home</li>
+					<li>Tips</li>
+					<li>Sweepstakes</li>
+					<li>Member Benefits</li>
+				</ul>
+			</div>
+			<div id='sign_out'><%= link_to "Sign out", signout_path, :method => :delete %></div>
 		<% else %>
 			
 			<div class="text"><span class='normal'>Haven’t joined us yet? </span><span class='red'><%= link_to 'Register here', signup_path %></span></div>
