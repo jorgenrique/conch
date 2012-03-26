@@ -40,7 +40,8 @@ h1 {
         #header #inner #nav_menu ul li:hover {
           color: #aaa; }
         #header #inner #nav_menu ul .red {
-          color: #912424 !important; }
+          color: #912424 !important;
+          text-shadow: #000 1px 1px 6px; }
     #header #inner #sign_out {
       float: right;
       margin-top: 20px; }
