@@ -19,7 +19,7 @@ h1{
 #header{
 	width:100%;
 	height:60px;
-	background-color:rgba(0, 0, 0, 0.5);
+	background-color:rgba(0, 0, 0, 0.75);
 	margin-top:0;
 	color:#fff;
 	/*-moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
@@ -73,6 +73,7 @@ h1{
 				float:left;
 				a{
 					color:#912424 !important;
+					text-shadow: #000 1px 1px 6px;
 				}
 			}
 		}
@@ -125,7 +126,6 @@ h1{
 	width:900px;
 	height:auto;
 	margin:auto;
-	margin-top:20px;
 	color:#fff;
 	#signup{
 		height:100%;
@@ -218,12 +218,22 @@ h1{
 	#new_user{
 		color:#912424 !important;
 	}
-	.info{
-		float:left;
-		margin-top:120px;
+	#left{
 		width:460px;
-		height:300px;
-		background-color:rgba(0, 0, 0, 0.75);
+		height:100%;
+		float:left;
+		.logo{
+			float:left;
+			width:100%;
+			margin-top:20px;
+		}
+		.info{
+			margin-top:20px;
+			float:left;
+			width:100%;
+			height:300px;
+			background-color:rgba(0, 0, 0, 0.75);
+		}
 	}
 	.copy{
 		float:left;

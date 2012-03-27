@@ -46,7 +46,10 @@
 					<li>Member Benefits</li>
 				</ul>
 			</div>
-			<div id='sign_out'><%= link_to "Sign out", signout_path, :method => :delete %></div>
+			<div id='sign_out'>
+				Hello <%= link_to current_user.username, '/' %>, you have # referees |
+				<span class='red'><%= link_to "Sign out", signout_path, :method => :delete %></div>
+			</div>
 		<% else %>
 			
 			<div class="text"><span class='normal'>Haven’t joined us yet? </span><span class='red'><%= link_to 'Register here', signup_path %></span></div>
