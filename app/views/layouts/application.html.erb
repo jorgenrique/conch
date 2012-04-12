@@ -48,7 +48,7 @@
 			</div>
 			<div id='sign_out'>
 				Hello <%= link_to current_user.username, '/' %>, you have # referees |
-				<span class='red'><%= link_to "Sign out", signout_path, :method => :delete %></div>
+				<%= link_to "Sign out", signout_path, :method => :delete %>
 			</div>
 		<% else %>
 			
@@ -75,13 +75,15 @@
 	</div>
 	
 	<div id='cont'>
+		<div id='cont_center'>
 		  <%= yield %>
+		</div>
 	</div>
 	
 	<div id='footer'></div>
 	
-	
+	<div style='position:absolute;top:100px;left:0px'>
 	<%= debug(params) if Rails.env.development? %>
-
+	</div>
 </body>
 </html>
