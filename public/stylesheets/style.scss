@@ -29,6 +29,17 @@ h1{
 	#inner{
 		width:900px;
 		margin:auto;
+		position:relative;
+		#head_logo{
+			position:absolute;
+			float:left;
+			width:200px;
+			height:60px;
+			margin:0;
+			padding:0;
+			top:0;
+			left:350px;
+		}
 		#nav_menu{
 			float:left;
 			margin-top:20px;
@@ -134,27 +145,45 @@ h1{
 		height:auto;
 		#right_block{
 			float:right;
-			width:400px;
+			width:460px;
 			height:100%;
 			#videos{
 				float:left;
-				width:100%;
-				height:320px;
-				padding:10px;
+				width:420px;
+				padding:20px;
 				moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
 		  		-webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
 		  		box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
 				margin-top:30px;
 				background-color:#fff;
-			}
-			#logo{
-				float:left;
-				width:100%;
-				height:auto;
-				margin-top:20px;
-				img{
-					height:180px;
-					float:right;
+				#main_vid{
+						background-color:rgba(0, 0, 0, 0.75);
+						float:left;
+						width:100%;
+						height:315px;
+				}
+				#small_vid{
+					height:80px;
+					width:100%;
+					float:left;
+					margin-top:20px;
+					#prev{
+						float:left;
+						cursor:pointer;
+						margin:20px 9px 0 0;
+					}
+					#next{
+						float:left;
+						cursor:pointer;
+						margin:20px 0 0 9px;
+					}
+					.tile{
+						float:left;
+						height:100%;
+						width:100px;
+						margin:0 10px;
+						background-color:blue;
+					}
 				}
 			}
 		}
@@ -162,7 +191,7 @@ h1{
 			float:left;
 			width:200px;
 			height:10px;
-			margin-top:30px;
+			margin:30px 0 0 20px;
 			position:relative;
 			#title{
 				position:absolute;
@@ -173,39 +202,38 @@ h1{
 				color:#912424;
 				text-transform:uppercase;
 			}
-			.link{
-				position:absolute;
-				top:80px;
-				left:0;
-				display:none;
-				h1{
-					font-size:24px;
-					font-weight:400;
-					color:#912424;
-					text-transform:uppercase;
-				}
-			}
 			.link_2{
 				position:absolute;
-				top:80px;
+				top:0px;
 				left:0;
 				display:none;
 				width:100%;
 				min-height:100px;
-				background-color:#ccc;
+				background-color:rgba(0, 0, 0, 0.75);
 				z-index:2;
 				padding:10px;
+				cursor:default;
 				h1{
 					font-size:24px;
 					font-weight:400;
 					color:#912424;
 					text-transform:uppercase;
+					text-shadow: #000 1px 1px 6px;
+					float:left;
+					width:100%;
 				}
 				h2{
 					font-size:16px;
 					font-weight:400;
-					color:#000;
+					color:#fff;
 					text-transform:uppercase;
+					text-shadow: #000 1px 1px 6px;
+					cursor:pointer;
+					float:left;
+					width:100%;
+				}
+				h2:hover{
+					color:#ccc;
 				}
 			}
 		}

@@ -46,6 +46,9 @@
 					<li>Member Benefits</li>
 				</ul>
 			</div>
+			<div id='head_logo'>
+				<%= image_tag 'head_logo.png' %>
+			</div>
 			<div id='sign_out'>
 				Hello <%= link_to current_user.username, '/' %>, you have # referees |
 				<%= link_to "Sign out", signout_path, :method => :delete %>

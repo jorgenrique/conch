@@ -7,45 +7,36 @@ $(document).ready(function() {
 		$(this).addClass('red');
 	});
 	
-	$('#legs').mouseenter(function(){
-		$('#human').hide();
-		$('#down').show();
-		$('#link_legs').show();
+	$('#body_sample').mouseenter(function(){
+		$('#human').fadeOut('fast');
 	}).mouseleave(function(){
 		$('#human').show();
-		$('#down').hide();
-		$('.link').hide();
+	});
+	
+	$('#legs').mouseenter(function(){
+		$('#down').fadeIn('fast');
+	}).mouseleave(function(){
+		$('#down').fadeOut('fast');
 	});
 	
 	$('#lower_body').mouseenter(function(){
-		$('#human').hide();
-		$('#abs').show();
-		$('#link_middle').show();
+		$('#abs').fadeIn('fast');
 	}).mouseleave(function(){
-		$('#human').show();
-		$('#abs').hide();
-		$('.link').hide();
+		$('#abs').fadeOut('fast');
 	});
 	
 	$('.arms').mouseenter(function(){
-		$('#human').hide();
-		$('#middle').show();
-		$('#link_arms').show();
+		$('#middle').fadeIn('fast');
 	}).mouseleave(function(){
-		$('#human').show();
-		$('#middle').hide();
-		$('.link').hide();
+		$('#middle').fadeOut('fast');
 	});
 	
 	$('#upper_body').mouseenter(function(){
-		$('#human').hide();
-		$('#up').show();
-		$('#link_up').show();
+		$('#up').fadeIn('fast');
 	}).mouseleave(function(){
-		$('#human').show();
-		$('#up').hide();
-		$('.link').hide();
+		$('#up').fadeOut('fast');
 	});
+	
 	
 	$('.arms').click(function(){
 		$('.link_2').hide();

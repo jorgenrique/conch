@@ -25,20 +25,7 @@
 
 <div id='links'>
 	
-	<div id='title'>Select your workout</div>
-	
-	<div id='link_up' class='link'>
-		<h1>Upper Body</h1>
-	</div>
-	<div id='link_middle' class='link'>
-		<h1>Abs</h1>
-	</div>
-	<div id='link_arms' class='link'>
-		<h1>arms</h1>
-	</div>
-	<div id='link_legs' class='link'>
-		<h1>legs</h1>
-	</div>
+	<div id='instructions'></div>
 	
 	<div id='link_up_2' class='link_2'>
 		<h1>Upper Body</h1>
@@ -66,8 +53,18 @@
 </div>
 
 <div id='right_block'>
-	<div id='videos'></div>
-	<div id='logo'>
-		<%= image_tag 'logo_home.png' %>
+	<div id='videos'>
+		<div id='main_vid'></div>
+		<div id='small_vid'>
+			<div id='prev'>
+				<%= image_tag 'prev.png'%>
+			</div>
+			<div class='tile'></div>
+			<div class='tile'></div>
+			<div class='tile'></div>
+			<div id='next'>
+				<%= image_tag 'next.png'%>
+			</div>
+		</div>
 	</div>
 </div>
