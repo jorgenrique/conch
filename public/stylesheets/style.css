@@ -5,7 +5,7 @@
   font-size: 12px; }
 
 h1 {
-  color: #912424 !important; }
+  color: #b72020 !important; }
 
 #bg {
   position: absolute;
@@ -14,6 +14,10 @@ h1 {
   z-index: -1; }
   #bg img {
     height: 100%; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
 
 #header {
   width: 100%;
@@ -51,13 +55,13 @@ h1 {
         #header #inner #nav_menu ul li:hover {
           color: #aaa; }
         #header #inner #nav_menu ul .red {
-          color: #912424 !important;
+          color: #b72020 !important;
           text-shadow: #000 1px 1px 6px; }
     #header #inner #sign_out {
       float: right;
       margin-top: 20px; }
       #header #inner #sign_out a {
-        color: #912424;
+        color: #b72020;
         text-shadow: #000 1px 1px 6px;
         text-decoration: none; }
     #header #inner .text {
@@ -74,7 +78,7 @@ h1 {
         margin-left: 5px;
         float: left; }
         #header #inner .text .red a {
-          color: #912424 !important;
+          color: #b72020 !important;
           text-shadow: #000 1px 1px 6px; }
     #header #inner .login {
       float: right;
@@ -171,7 +175,7 @@ h1 {
         left: 0;
         font-size: 24px;
         font-weight: 400;
-        color: #912424;
+        color: #b72020;
         text-transform: uppercase; }
       #cont #cont_center #links .link_2 {
         position: absolute;
@@ -187,7 +191,7 @@ h1 {
         #cont #cont_center #links .link_2 h1 {
           font-size: 24px;
           font-weight: 400;
-          color: #912424;
+          color: #b72020;
           text-transform: uppercase;
           text-shadow: #000 1px 1px 6px;
           float: left;
@@ -265,7 +269,7 @@ h1 {
       margin: auto;
       margin-top: 50px; }
       #cont #cont_center #signup #error_explanation {
-        color: #912424 !important; }
+        color: #b72020 !important; }
       #cont #cont_center #signup h1 {
         font-size: 24px;
         text-align: center;
@@ -335,7 +339,7 @@ h1 {
               background-image: url(../images/reg_on.png);
               background-repeat: no-repeat; }
     #cont #cont_center #new_user {
-      color: #912424 !important; }
+      color: #b72020 !important; }
     #cont #cont_center #left {
       width: 460px;
       height: 100%;
@@ -369,7 +373,7 @@ h1 {
       margin-top: 100px; }
       #cont #cont_center .round .flash {
         width: 100%;
-        color: #912424 !important;
+        color: #b72020 !important;
         text-align: center;
         margin-bottom: 10px; }
       #cont #cont_center .round h1 {
@@ -435,4 +439,41 @@ h1 {
           height: 20px;
           width: 100%; }
           #cont #cont_center .round .sign p a {
-            color: #912424 !important; }
+            color: #b72020 !important; }
+
+#benefits {
+  float: left;
+  height: auto;
+  width: 660px;
+  margin: 100px 0 0 100px;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 20px; }
+  #benefits #title {
+    float: left;
+    color: #b72020;
+    text-shadow: #000 1px 1px 6px;
+    height: 40px;
+    font-size: 18px;
+    text-transform: uppercase; }
+  #benefits #pics {
+    float: left;
+    background-color: #fff;
+    width: 660px;
+    height: auto; }
+    #benefits #pics .pic {
+      float: left;
+      margin: 10px;
+      height: 200px;
+      width: 200px;
+      position: relative; }
+      #benefits #pics .pic .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.75);
+        height: 160px;
+        width: 200px;
+        padding: 20px 0;
+        text-align: center;
+        display: none;
+        cursor: pointer; }

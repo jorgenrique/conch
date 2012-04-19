@@ -40,10 +40,10 @@
 		<% if signed_in? %>
 			<div id='nav_menu'>
 				<ul>
-					<li>Home</li>
-					<li>Tips</li>
-					<li>Sweepstakes</li>
-					<li>Member Benefits</li>
+					<li id='home'><%= link_to 'Home', '/home' %></li>
+					<li id='tips'><%= link_to 'Tips', '/tips' %></li>
+					<li id='sweeps'><%= link_to 'Sweepstakes', '/sweepstakes' %></li>
+					<li id='member'><%= link_to 'Member Benefits', '/member_benefits' %></li>
 				</ul>
 			</div>
 			<div id='head_logo'>

@@ -5,10 +5,14 @@ Conch::Application.routes.draw do
   
 
   match '/signup',    :to => 'users#new'
-  match '/home',    :to => 'pages#home'
+  
   match '/signin',    :to => 'sessions#new'
   match '/signout',    :to => 'sessions#destroy'
   
+  match '/home',    :to => 'pages#home'
+  match '/tips',    :to => 'pages#tips'
+  match '/member_benefits',    :to => 'pages#member_benefits'
+  match '/sweepstakes',    :to => 'pages#sweepstakes'
 
   root :to => "pages#landing"
 

@@ -1,11 +1,23 @@
 $(document).ready(function() {
-  	
-	$('#nav_menu').children('ul').children('li').first().addClass('red');
-
-	$('#nav_menu').children('ul').children('li').click(function(){
-		$('#nav_menu').children('ul').children('li').removeClass('red');
-		$(this).addClass('red');
+	if(window.location.pathname.indexOf('home')>0){
+		$('#home').addClass('red');
+	};
+	if(window.location.pathname.indexOf('sweepstakes')>0){
+		$('#sweeps').addClass('red');
+	};
+	if(window.location.pathname.indexOf('tips')>0){
+		$('#tips').addClass('red');
+	};
+	if(window.location.pathname.indexOf('member_benefits')>0){
+		$('#member').addClass('red');
+	};
+	
+	$('.pic').mouseenter(function(){
+		$(this).children('.overlay').fadeIn('fast');
+	}).mouseleave(function(){
+		$('.overlay').fadeOut('fast');
 	});
+
 	
 	$('#body_sample').mouseenter(function(){
 		$('#human').fadeOut('fast');
