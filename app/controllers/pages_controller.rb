@@ -6,6 +6,12 @@ class PagesController < ApplicationController
 
   def landing
     @title='Hello Conchito landing'
+    
+    #user = User.authenticate(params[:session][:email],params[:session][:password])
+    if signed_in?
+      redirect_to home_path
+    end
+    
   end
   
   def about

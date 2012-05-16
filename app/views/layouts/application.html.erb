@@ -35,6 +35,10 @@
 		
 	<div id='right_bar'></div>
 	
+	<div id='refer'>
+		<%= link_to image_tag('refer.png'), '/refer' %>
+	</div>
+	
 	<div id='header'>
 		<div id='inner'>
 		<% if signed_in? %>
@@ -54,7 +58,6 @@
 				<%= link_to "Sign out", signout_path, :method => :delete %>
 			</div>
 		<% else %>
-			
 			<div class="text"><span class='normal'>Haven’t joined us yet? </span><span class='red'><%= link_to 'Register here', signup_path %></span></div>
 			<div class='login'>
 			<%= form_for(:session, :url => sessions_path, :class=>'login') do |f| %>
@@ -83,7 +86,18 @@
 		</div>
 	</div>
 	
-	<div id='footer'></div>
+	<div id='footer'>
+		<div id='inner'>
+			<div id='left'>Copyright © Fiteeze. All rights reserved</div>
+			<div id='right'>
+				<div class='red'><%= link_to 'privacy policy', '/privacy' %></div>
+				<div class='sp'>|</div>
+				<div class='red'><%= link_to 'terms of use', '/terms' %></div>
+				<div class='sp'>|</div>
+				<div class='red'><%= link_to 'contact', '/contact' %></div>
+			</div>
+		</div>
+	</div>
 	
 	<div style='position:absolute;top:100px;left:0px'>
 	<%= debug(params) if Rails.env.development? %>

@@ -13,6 +13,10 @@ Conch::Application.routes.draw do
   match '/tips',    :to => 'pages#tips'
   match '/member_benefits',    :to => 'pages#member_benefits'
   match '/sweepstakes',    :to => 'pages#sweepstakes'
+  match '/privacy',    :to => 'pages#privacy'
+  match '/terms',    :to => 'pages#terms'
+  match '/contact',    :to => 'pages#contact'
+  match '/refer',    :to => 'pages#refer'
 
   root :to => "pages#landing"
 

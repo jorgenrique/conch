@@ -23,6 +23,7 @@ a {
   width: 100%;
   float: left;
   height: 60px;
+  background-color: black;
   background-color: rgba(0, 0, 0, 0.75);
   margin-top: 0;
   color: #fff;
@@ -140,6 +141,7 @@ a {
         margin-top: 30px;
         background-color: #fff; }
         #cont #cont_center #right_block #videos #main_vid {
+          background-color: black;
           background-color: rgba(0, 0, 0, 0.75);
           float: left;
           width: 100%;
@@ -184,6 +186,7 @@ a {
         display: none;
         width: 100%;
         min-height: 100px;
+        background-color: black;
         background-color: rgba(0, 0, 0, 0.75);
         z-index: 2;
         padding: 10px;
@@ -275,12 +278,14 @@ a {
         text-align: center;
         width: 100%;
         padding: 20px 20px 0;
+        background-color: black;
         background-color: rgba(0, 0, 0, 0.75); }
       #cont #cont_center #signup h2 {
         font-size: 10px;
         text-align: center;
         width: 100%;
         padding: 5px 20px;
+        background-color: black;
         background-color: rgba(0, 0, 0, 0.75);
         color: #ccc; }
       #cont #cont_center #signup h3 {
@@ -289,12 +294,14 @@ a {
         text-align: right;
         width: 100%;
         padding: 0 20px 20px;
+        background-color: black;
         background-color: rgba(0, 0, 0, 0.75);
         color: #ccc; }
       #cont #cont_center #signup .form {
         height: 280px;
         float: left;
         width: 100%;
+        background-color: black;
         background-color: rgba(0, 0, 0, 0.75);
         padding: 0 20px; }
         #cont #cont_center #signup .form .field {
@@ -353,6 +360,7 @@ a {
         float: left;
         width: 100%;
         height: 300px;
+        background-color: black;
         background-color: rgba(0, 0, 0, 0.75); }
     #cont #cont_center .copy {
       float: left;
@@ -381,11 +389,13 @@ a {
         text-align: center;
         width: 100%;
         padding: 20px 20px 0;
+        background-color: black;
         background-color: rgba(0, 0, 0, 0.75); }
       #cont #cont_center .round .form {
         height: 120px;
         float: left;
         width: 100%;
+        background-color: black;
         background-color: rgba(0, 0, 0, 0.75);
         padding: 0 20px; }
         #cont #cont_center .round .form .field {
@@ -432,6 +442,7 @@ a {
         width: 100%;
         height: 20px;
         padding-top: 10px;
+        background-color: black;
         background-color: rgba(0, 0, 0, 0.75);
         padding: 0 20px 20px; }
         #cont #cont_center .round .sign p {
@@ -446,6 +457,7 @@ a {
   height: auto;
   width: 660px;
   margin: 100px 0 0 100px;
+  background-color: black;
   background-color: rgba(0, 0, 0, 0.75);
   padding: 20px; }
   #benefits #title {
@@ -470,6 +482,7 @@ a {
         position: absolute;
         top: 0;
         left: 0;
+        background-color: black;
         background-color: rgba(0, 0, 0, 0.75);
         height: 160px;
         width: 200px;
@@ -477,3 +490,63 @@ a {
         text-align: center;
         display: none;
         cursor: pointer; }
+
+#legal {
+  float: left;
+  height: auto;
+  width: 860px;
+  margin: 50px 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 20px; }
+  #legal #title {
+    float: left;
+    color: #b72020;
+    text-shadow: #000 1px 1px 6px;
+    height: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center; }
+  #legal #text {
+    float: left;
+    background-color: #fff;
+    width: 800px;
+    height: auto;
+    padding: 30px;
+    color: #000; }
+
+#footer {
+  width: 100%;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
+  height: 20px;
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  padding-top: 5px;
+  text-align: center;
+  font-size: 10px; }
+  #footer #inner {
+    width: 900px;
+    margin: auto; }
+    #footer #inner #left {
+      float: left; }
+    #footer #inner #right {
+      float: right;
+      text-transform: uppercase; }
+      #footer #inner #right .red {
+        color: #b72020;
+        text-shadow: #000 1px 1px 6px;
+        float: left;
+        padding-top: 1px; }
+      #footer #inner #right .red:hover {
+        color: #aaa; }
+      #footer #inner #right .sp {
+        float: left;
+        margin: 0 5px; }
+
+#refer {
+  position: absolute;
+  top: 0px;
+  right: 10px; }
