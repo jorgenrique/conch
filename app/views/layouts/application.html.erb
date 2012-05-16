@@ -85,7 +85,7 @@
 		  <%= yield %>
 		</div>
 	</div>
-	
+	<% if signed_in? %>
 	<div id='footer'>
 		<div id='inner'>
 			<div id='left'>Copyright © Fiteeze. All rights reserved</div>
@@ -98,7 +98,7 @@
 			</div>
 		</div>
 	</div>
-	
+	<% end %>
 	<div style='position:absolute;top:100px;left:0px'>
 	<%= debug(params) if Rails.env.development? %>
 	</div>
