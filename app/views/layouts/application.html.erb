@@ -85,22 +85,25 @@
 		  <%= yield %>
 		</div>
 	</div>
+	
 	<% if signed_in? %>
-	<div id='footer'>
-		<div id='inner'>
-			<div id='left'>Copyright © Fiteeze. All rights reserved</div>
-			<div id='right'>
-				<div class='red'><%= link_to 'privacy policy', '/privacy' %></div>
-				<div class='sp'>|</div>
-				<div class='red'><%= link_to 'terms of use', '/terms' %></div>
-				<div class='sp'>|</div>
-				<div class='red'><%= link_to 'contact', '/contact' %></div>
+		<div id='footer'>
+			<div id='inner'>
+				<div id='left'>Copyright © Fiteeze. All rights reserved</div>
+				<div id='right'>
+					<div class='red'><%= link_to 'privacy policy', '/privacy' %></div>
+					<div class='sp'>|</div>
+					<div class='red'><%= link_to 'terms of use', '/terms' %></div>
+					<div class='sp'>|</div>
+					<div class='red'><%= link_to 'contact', '/contact' %></div>
+				</div>
 			</div>
 		</div>
-	</div>
 	<% end %>
-	<div style='position:absolute;top:100px;left:0px'>
+	
+	<div style='position:absolute;bottom:30px;left:5px'>
 	<%= debug(params) if Rails.env.development? %>
 	</div>
+	
 </body>
 </html>
