@@ -34,10 +34,11 @@
 	<div id='supersized'></div>
 		
 	<div id='right_bar'></div>
-	
+	<% if signed_in? %>
 	<div id='refer'>
 		<%= link_to image_tag('refer.png'), '/refer' %>
 	</div>
+	<% end %>
 	
 	<div id='header'>
 		<div id='inner'>
@@ -85,8 +86,6 @@
 		  <%= yield %>
 		</div>
 	</div>
-	
-	<% if signed_in? %>
 		<div id='footer'>
 			<div id='inner'>
 				<div id='left'>Copyright © Fiteeze. All rights reserved</div>
@@ -99,11 +98,8 @@
 				</div>
 			</div>
 		</div>
-	<% end %>
-	
 	<div style='position:absolute;bottom:30px;left:5px'>
 	<%= debug(params) if Rails.env.development? %>
 	</div>
-	
 </body>
 </html>
