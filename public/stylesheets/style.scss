@@ -602,7 +602,7 @@ a{
 #footer{
 	width:100%;
 	background-color:rgb(0, 0, 0);
-	background-color:rgba(0, 0, 0, 0.75);
+	/*background-color:rgba(0, 0, 0, 0.75);*/
 	height:20px;
 	position:fixed;
 	bottom:0;
@@ -639,4 +639,32 @@ a{
 	position:absolute;
 	top:0px;
 	right:10px;
+}
+#refer_friends{
+	width:100%;
+	float:left;
+	margin:30px 0 40px;
+	background-color:rgb(0, 0, 0);
+	background-color:rgba(0, 0, 0, 0.75);
+	#intro{
+		float:left;
+		padding:20px;
+		width:860px;
+		#title{
+			float:left;
+			color:#b72020;
+			text-shadow: #000 1px 1px 6px;
+			height:40px;
+			font-size:18px;
+			text-transform:uppercase;
+		}
+		#small_txt{
+			font-size:11px;
+		}
+	}
+	#fields{
+		float:left;
+		width:420px;
+		padding:30px 240px;
+	}
 }

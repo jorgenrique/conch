@@ -1,0 +1,20 @@
+<div id='refer_friends'>
+	<div id='intro'>
+		<div id='title'>Refer a Friend</div>
+		<div id='cont'>
+			Enter your friends email addresses in order to invite them
+			<br>
+			<span id='small_txt'>*Please only invite people you know. Intentionally using invalid email addresses will result in your Mack Weldon credit offer being revoked. Mack Weldon's <a href='/terms' target='_blank'>Terms of Use</a> apply.</span>
+		</div>
+	</div>
+	<div id='fields'>
+		<% form_for 'invite', :url=>'/refer/invite_friends' do |f| %>
+			<% [0,1,2,3,4,5,6,7,8,9].each do |num|%>
+				<%= f.text_field 'email_'+num.to_s, :class=>'invites' %>
+			<% end %>
+		    <p id='message'>Message</p>
+		    <%= f.text_area "message", :id=>'the_message', :value => "Please accept my invitation to join Mack Weldon." %><br>
+		    <%= f.submit 'send invitation' %>
+		<% end %>
+	</div>
+</div>
