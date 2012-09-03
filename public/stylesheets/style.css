@@ -72,7 +72,6 @@ a {
       #header #inner .text .normal {
         float: left; }
       #header #inner .text .red {
-        text-decoration: underline;
         cursor: pointer;
         text-shadow: none;
         font-weight: 600;
@@ -356,12 +355,21 @@ a {
         width: 100%;
         margin-top: 20px; }
       #cont #cont_center #left .info {
-        margin-top: 20px;
+        margin: 20px 0 50px;
         float: left;
         width: 100%;
         height: 300px;
         background-color: black;
-        background-color: rgba(0, 0, 0, 0.75); }
+        background-color: rgba(0, 0, 0, 0.75);
+        padding: 10px;
+        overflow: auto; }
+        #cont #cont_center #left .info h1 {
+          font-size: 15px;
+          margin: 10px 0;
+          float: left; }
+        #cont #cont_center #left .info ul {
+          float: left;
+          margin: 0 0 20px 15px; }
     #cont #cont_center .copy {
       float: left;
       width: 400px;
@@ -560,7 +568,7 @@ a {
   #refer_friends #intro {
     float: left;
     padding: 20px;
-    width: 860px; }
+    width: 400px; }
     #refer_friends #intro #title {
       float: left;
       color: #b72020;
@@ -569,8 +577,34 @@ a {
       font-size: 18px;
       text-transform: uppercase; }
     #refer_friends #intro #small_txt {
-      font-size: 11px; }
+      font-size: 10px; }
+      #refer_friends #intro #small_txt a {
+        font-size: 10px;
+        font-style: italic; }
   #refer_friends #fields {
     float: left;
     width: 420px;
-    padding: 30px 240px; }
+    padding: 30px 20px; }
+    #refer_friends #fields .invites {
+      float: left;
+      margin: 0 5px 5px 0;
+      width: 195px; }
+    #refer_friends #fields #message {
+      float: left;
+      width: 100%;
+      margin: 10px 0; }
+    #refer_friends #fields #the_message {
+      float: left;
+      width: 405px;
+      height: 100px; }
+    #refer_friends #fields #invite_submit {
+      float: left;
+      width: 120px;
+      height: 20px;
+      border: none;
+      background-color: none;
+      color: #fff;
+      background-image: url(../images/invite.png);
+      background-repeat: no-repeat;
+      margin-top: 10px;
+      cursor: pointer; }

@@ -82,7 +82,6 @@ a{
 				float:left;
 			}
 			.red{
-				text-decoration:underline;
 				cursor:pointer;
 				text-shadow:none;
 				font-weight:600;
@@ -413,12 +412,23 @@ a{
 				margin-top:20px;
 			}
 			.info{
-				margin-top:20px;
+				margin:20px 0 50px;
 				float:left;
 				width:100%;
 				height:300px;
 				background-color:rgb(0, 0, 0);
 				background-color:rgba(0, 0, 0, 0.75);
+				padding:10px;
+				overflow:auto;
+				h1{
+					font-size:15px;
+					margin:10px 0;
+					float:left;
+				}
+				ul{
+					float:left;
+					margin:0 0 20px 15px;
+				}
 			}
 		}
 		.copy{
@@ -649,7 +659,7 @@ a{
 	#intro{
 		float:left;
 		padding:20px;
-		width:860px;
+		width:400px;
 		#title{
 			float:left;
 			color:#b72020;
@@ -659,12 +669,43 @@ a{
 			text-transform:uppercase;
 		}
 		#small_txt{
-			font-size:11px;
+			font-size:10px;
+			a{
+				font-size:10px;
+				font-style:italic;
+			}
 		}
 	}
 	#fields{
 		float:left;
 		width:420px;
-		padding:30px 240px;
+		padding:30px 20px;
+		.invites{
+			float:left;
+			margin:0 5px 5px 0;
+			width:195px;
+		}
+		#message{
+			float:left;
+			width:100%;
+			margin:10px 0;
+		}
+		#the_message{
+			float:left;
+			width:405px;
+			height:100px;
+		}
+		#invite_submit{
+			float:left;
+			width:120px;
+			height:20px;
+			border:none;
+			background-color:none;
+			color:#fff;
+			background-image:url(../images/invite.png);
+			background-repeat:no-repeat;
+			margin-top:10px;
+			cursor:pointer;
+		}
 	}
 }
